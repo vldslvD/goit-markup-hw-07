@@ -745,10 +745,6 @@ body {
   margin-bottom: 0;
 }
 
-.checkbox:checked ~ .qwe {
-  color: var(--pressed-color);
-}
-
 .modal-form .checkbox-wrapper {
   position: absolute;
   top: 50%;
@@ -848,9 +844,6 @@ textarea:active {
   transform: translateX(0);
 }
 
-.mobile-menu {
-  margin-bottom: 284px;
-}
 .mobile-menu .link {
   font-weight: 700;
   font-size: 36px;
@@ -861,8 +854,17 @@ textarea:active {
 .menu-container .icon-list .item + .item {
   margin-left: 56px;
 }
+
 .mobile-menu .item:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.menu-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 83vh;
 }
 
 .mobile-contacts .tel {
@@ -878,13 +880,17 @@ textarea:active {
   line-height: 120%;
   letter-spacing: 0.02em;
 }
+
 .mobile-contacts .item + .item {
   margin-top: 40px;
 }
 
-.mobile-contacts {
-  margin-bottom: 48px;
+@media screen and (min-width: 480px){
+.container {
+    width: 428px;
+  }
 }
+
 @media screen and (max-width: 767px) {
   .link.current {
     color: var(--primary-color);
